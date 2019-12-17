@@ -9,6 +9,10 @@ using EsiaNET;
 
 namespace ESIA.AspNetIdentityExample
 {
+    using System.IO;
+    using System.Web;
+    using System.Web.Mvc;
+
     /// <summary>
     /// Класс для создания параметров подключения к ЕСИА, используется и в ASP.NET Identity и в EsiaClient
     /// Это один из вариантов использования, вы не обязаны следовать этому примеру
@@ -29,7 +33,7 @@ namespace ESIA.AspNetIdentityExample
                 SignProvider = EsiaOptions.CreateSignProvider(() =>
                 {
                     // Будем искать сертификат в личном хранилище на локальной машине
-                    X509Store storeMy = new X509Store(StoreName.My, StoreLocation.LocalMachine);
+                    X509Store storeMy = new X509Store(StoreName.My, StoreLocation.CurrentUser);
                     storeMy.Open(OpenFlags.OpenExistingOnly);
                     X509Certificate2Collection certColl = storeMy.Certificates.Find(X509FindType.FindBySerialNumber, WebConfigurationManager.AppSettings["AppCertSerial"], false);
 
@@ -37,8 +41,12 @@ namespace ESIA.AspNetIdentityExample
 
                     return certColl[0];
                 },
-                    // Action должен вернуть сертификат ЕСИА тестовый или рабочий. В данном примере ищем сертификат по его пути, указанном в конфигурационном файле
-                    () => new X509Certificate2(WebConfigurationManager.AppSettings["EsiaCertFile"]))
+                 // Action должен вернуть сертификат ЕСИА тестовый или рабочий. В данном примере ищем сертификат по его пути, указанном в конфигурационном файле
+                 () =>
+                     {
+                         string path = HttpContext.Current.Server.MapPath(WebConfigurationManager.AppSettings["EsiaCertFile"]);
+                         return new X509Certificate2(path);
+                     })
             };
         }
     }

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EntityDescriptor entityID="https://esia.gosuslugi.ru/idp/shibboleth" xmlns="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><IDPSSODescriptor protocolSupportEnumeration="urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol"><Extensions><shibmd:Scope regexp="false">gosuslugi.ru</shibmd:Scope></Extensions><KeyDescriptor><ds:KeyInfo><ds:X509Data><ds:X509Certificate>MIIDLzCCAhegAwIBAgIUSjDd3zQqo15A9U+dWPup1LVnBUcwDQYJKoZIhvcNAQEF
+BQAwHDEaMBgGA1UEAxMRZXNpYS5nb3N1c2x1Z2kucnUwHhcNMTEwMjA4MTcxNjU3
+WhcNMzEwMjA4MTcxNjU3WjAcMRowGAYDVQQDExFlc2lhLmdvc3VzbHVnaS5ydTCC
+ASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAIRcVp+fht6UbKj+u1CWtt7V
+8XzrxYhL015ncOYtkrHsDqa3CFVcciUSCpmdVXdlELkMJfDujdEuWHfYMMm45oKY
+nATKtZZVraWQyZKNDuvAmyvqVV4vYi4Hrs5uyRifeCKk7seobokegp67pOmq9IKD
+gbU17jw1dbXkOup+m3G0aU9qx9QHF1IyfA9DTKODYn0Sw4WBxiQE1/10l7UI0xlf
+y5UWEJnJUxvlEB9xbmA4pOhha31QFttNuNN+mKmocEqqtWHwv8FNs2J+QtlZg8yq
+jkqm2bVuro2/XTTccjlmxDlZillIa3z5Uhp62AzMbna7bujIJk0Lb6Vv3GLY1MsC
+AwEAAaNpMGcwRgYDVR0RBD8wPYIRZXNpYS5nb3N1c2x1Z2kucnWGKGh0dHBzOi8v
+ZXNpYS5nb3N1c2x1Z2kucnUvaWRwL3NoaWJib2xldGgwHQYDVR0OBBYEFG0l8mWu
+TaeKycP5TgquVfiMpFlUMA0GCSqGSIb3DQEBBQUAA4IBAQAxnl4rfWBIsYHwqom6
+BiFWGLUJXwvG8nFNGZZ3YPh6RYduagV9qAkBkm4okt89qb/GEo9XRHiKUAQKxTmC
+rFBCtfqDPPYTKu5O4aKOO3EKYmi4h4WcZSFaQYQa9Owp5vj8J5D3jlM3RcdjTBfc
+zjPoXcANCnrVFOkCRXTj+AcQ3GLsIR3bt731rZo+Ds8RVoV1/8LJp4rA2F10fu6N
+W4csLnZP3OfxAH+mZ9AezJ/2wRelA3ru5dqN8TcbAAykJurWP+uT+BHXwK0GN7vX
+Z6cuQGFtfZ5GB/sgvHE0wB17RWQDCzQcjvIIj8EFuloQ1ce67QMMqEqF8wvUDWds
+XAIl</ds:X509Certificate></ds:X509Data></ds:KeyInfo></KeyDescriptor><ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding" Location="https://esia.gosuslugi.ru/idp/profile/SAML1/SOAP/ArtifactResolution" index="1"/><ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://esia.gosuslugi.ru/idp/profile/SAML2/SOAP/ArtifactResolution" index="2"/><SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://esia.gosuslugi.ru/idp/profile/SAML2/Redirect/SLO" ResponseLocation="https://esia.gosuslugi.ru/idp/profile/SAML2/Redirect/SLO"/><SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://esia.gosuslugi.ru/idp/profile/SAML2/POST/SLO" ResponseLocation="https://esia.gosuslugi.ru/idp/profile/SAML2/POST/SLO"/><SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://esia.gosuslugi.ru/idp/profile/SAML2/SOAP/SLO"/><NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</NameIDFormat><NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat><SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest" Location="https://esia.gosuslugi.ru/idp/profile/Shibboleth/SSO"/><SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://esia.gosuslugi.ru/idp/profile/SAML2/POST/SSO"/><SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://esia.gosuslugi.ru/idp/profile/SAML2/POST-SimpleSign/SSO"/><SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://esia.gosuslugi.ru/idp/profile/SAML2/Redirect/SSO"/></IDPSSODescriptor><AttributeAuthorityDescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol"><Extensions><shibmd:Scope regexp="false">gosuslugi.ru</shibmd:Scope></Extensions><KeyDescriptor><ds:KeyInfo><ds:X509Data><ds:X509Certificate>MIIDLzCCAhegAwIBAgIUSjDd3zQqo15A9U+dWPup1LVnBUcwDQYJKoZIhvcNAQEF
+BQAwHDEaMBgGA1UEAxMRZXNpYS5nb3N1c2x1Z2kucnUwHhcNMTEwMjA4MTcxNjU3
+WhcNMzEwMjA4MTcxNjU3WjAcMRowGAYDVQQDExFlc2lhLmdvc3VzbHVnaS5ydTCC
+ASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAIRcVp+fht6UbKj+u1CWtt7V
+8XzrxYhL015ncOYtkrHsDqa3CFVcciUSCpmdVXdlELkMJfDujdEuWHfYMMm45oKY
+nATKtZZVraWQyZKNDuvAmyvqVV4vYi4Hrs5uyRifeCKk7seobokegp67pOmq9IKD
+gbU17jw1dbXkOup+m3G0aU9qx9QHF1IyfA9DTKODYn0Sw4WBxiQE1/10l7UI0xlf
+y5UWEJnJUxvlEB9xbmA4pOhha31QFttNuNN+mKmocEqqtWHwv8FNs2J+QtlZg8yq
+jkqm2bVuro2/XTTccjlmxDlZillIa3z5Uhp62AzMbna7bujIJk0Lb6Vv3GLY1MsC
+AwEAAaNpMGcwRgYDVR0RBD8wPYIRZXNpYS5nb3N1c2x1Z2kucnWGKGh0dHBzOi8v
+ZXNpYS5nb3N1c2x1Z2kucnUvaWRwL3NoaWJib2xldGgwHQYDVR0OBBYEFG0l8mWu
+TaeKycP5TgquVfiMpFlUMA0GCSqGSIb3DQEBBQUAA4IBAQAxnl4rfWBIsYHwqom6
+BiFWGLUJXwvG8nFNGZZ3YPh6RYduagV9qAkBkm4okt89qb/GEo9XRHiKUAQKxTmC
+rFBCtfqDPPYTKu5O4aKOO3EKYmi4h4WcZSFaQYQa9Owp5vj8J5D3jlM3RcdjTBfc
+zjPoXcANCnrVFOkCRXTj+AcQ3GLsIR3bt731rZo+Ds8RVoV1/8LJp4rA2F10fu6N
+W4csLnZP3OfxAH+mZ9AezJ/2wRelA3ru5dqN8TcbAAykJurWP+uT+BHXwK0GN7vX
+Z6cuQGFtfZ5GB/sgvHE0wB17RWQDCzQcjvIIj8EFuloQ1ce67QMMqEqF8wvUDWds
+XAIl</ds:X509Certificate></ds:X509Data></ds:KeyInfo></KeyDescriptor><AttributeService Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding" Location="https://esia.gosuslugi.ru/idp/profile/SAML1/SOAP/AttributeQuery"/><AttributeService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://esia.gosuslugi.ru/idp/profile/SAML2/SOAP/AttributeQuery"/><NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</NameIDFormat><NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat></AttributeAuthorityDescriptor></EntityDescriptor>
