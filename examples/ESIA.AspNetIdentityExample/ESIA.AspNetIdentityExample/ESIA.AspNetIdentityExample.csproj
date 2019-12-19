@@ -49,14 +49,6 @@
       <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="EsiaNET, Version=0.1.0.2, Culture=neutral, PublicKeyToken=d4606aa8f0194e9d, processorArchitecture=MSIL">
-      <HintPath>..\packages\EsiaNET.0.1.0.2\lib\net45\EsiaNET.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="EsiaNET.Identity, Version=0.1.0.2, Culture=neutral, PublicKeyToken=75450ac914abce52, processorArchitecture=MSIL">
-      <HintPath>..\packages\EsiaNET.Identity.0.1.0.2\lib\net45\EsiaNET.Identity.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.2\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
@@ -272,6 +264,16 @@
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.1.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\EsiaNET.Identity\EsiaNET.Identity.csproj">
+      <Project>{7a5b9a00-faf1-4e57-b0bd-46ca8d04169b}</Project>
+      <Name>EsiaNET.Identity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EsiaNET\EsiaNET.csproj">
+      <Project>{70550F97-0C9B-43E9-AF5E-6987BAFC68A0}</Project>
+      <Name>EsiaNET</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
